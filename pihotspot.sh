@@ -252,7 +252,6 @@ if [[ $DEBIAN_VERSION -ne 9 ]];then
         display_message ""
         display_message "This script is used to get installed on Raspbian Stretch Lite"
         display_message ""
-	exit 1
 fi
 
 verifyFreeDiskSpace
