@@ -10,29 +10,28 @@ LOGPATH="/var/log/"
 # Password for user root (MySql/MariaDB not system)
 MYSQL_PASSWORD="pihotspot"
 # Name of the hotspot that will be visible for users/customers
-HOTSPOT_NAME="pihotspot"
+HOTSPOT_NAME="CarTunes"
 # IP of the hotspot
-HOTSPOT_IP="192.168.10.1"
+HOTSPOT_IP="10.0.0.1"
 # Use HTTPS to connect to web portal
 # Set value to Y or N
 HOTSPOT_HTTPS="N"
 # Network where the hotspot is located
-HOTSPOT_NETWORK="192.168.10.0"
+HOTSPOT_NETWORK="10.0.0.0"
 # Secret word for CoovaChilli
-COOVACHILLI_SECRETKEY="change-me"
+COOVACHILLI_SECRETKEY="cartunes"
 # Secret word for FreeRadius
-FREERADIUS_SECRETKEY="testing123"
+FREERADIUS_SECRETKEY="cartunes"
 # WAN interface (the one with Internet - default 'eth0' or long name for Debian 9+)
 WAN_INTERFACE=`ip link show | grep '^[1-9]' | awk -F ':' '{print $2}' | awk '{$1=$1};1' | grep '^e'`
 # LAN interface (the one for the hotspot)
 LAN_INTERFACE="wlan0"
 # Wifi driver
-LAN_WIFI_DRIVER="nl80211"
 # Install Haserl (required if you want to use the default Coova Portal)
 # Set value to Y or N
-HASERL_INSTALL="N"
+HASERL_INSTALL="Y"
 # Password used for the generation of the certificate
-CERT_PASSWORD="pihotspot"
+CERT_PASSWORD="cartunes"
 # Number of days to certify the certificate for (default 2 years)
 CERT_DAYS="730"
 # Make Avahi optional
