@@ -322,7 +322,7 @@ install_dependent_packages PIHOTSPOT_DEPS[@]
 
 notify_package_updates_available
 
-execute_command "service mariadb restart" true "Starting MySql service"
+execute_command "service mysql restart" true "Starting MySql service"
 
 execute_command "grep $WAN_INTERFACE /etc/network/interfaces" false "Update interface configuration ($WAN_INTERFACE)"
 if [ $COMMAND_RESULT -ne 0 ]; then
